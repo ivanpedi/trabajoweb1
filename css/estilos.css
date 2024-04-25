@@ -1,0 +1,409 @@
+/* **************** ESTILOS GENERALES ******************** */    
+/* **************** ESTILOS GENERALES ******************** */ 
+/* **************** ESTILOS GENERALES ******************** */ 
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+#container{
+    min-height: 100vh;
+    max-width:980px;
+    margin: auto auto;
+    display: grid;
+    grid-template-areas: 
+    "my-header my-header my-header"
+    "my-nav my-nav my-nav"
+    "my-main my-main my-main" 
+    "my-footer my-footer my-footer"   
+    ;
+     grid-template-rows:200px 50px 1fr 200px;
+     grid-template-columns: 100%;
+}
+
+/* **************** ESTILOS DE IMAGEN DE LA CABECERA ******************** */    
+/* **************** ESTILOS DE IMAGEN DE LA CABECERA ******************** */  
+/* **************** ESTILOS DE IMAGEN DE LA CABECERA ******************** */   
+
+header{
+    grid-area: my-header;    
+}
+
+#imagen-cabecera{
+    border: 1px solid black;
+    width: 1200px;
+    
+}
+
+/* **************** ESTILOS DEL MENÚ DE NAVEGACIÓN ******************** */
+/* **************** ESTILOS DEL MENÚ DE NAVEGACIÓN ******************** */
+/* **************** ESTILOS DEL MENÚ DE NAVEGACIÓN ******************** */
+
+nav{
+    margin-top: 52px;
+    align-items: flex-start;
+    
+}
+
+/* Modificación de comportamiento de los enlaces */
+
+a{
+	text-decoration: none;
+    color: white;    
+}
+
+.activo{
+    background-color: black;
+    text-align:center;
+	text-decoration: none;
+	display:inline;
+	
+	padding: 5px 30px ;
+	white-space: nowrap;
+	margin: 10px 10px 10px 10px;
+	border: 1px solid red;
+    border-radius: 5px;
+}
+
+/* Estilos comunes de los botones de navegación */
+.boton,.boton:hover,.botonin,.botonin:hover {
+	text-align:center;
+	text-decoration: none;
+	display: inline;
+
+	padding: 5px 30px ;
+	white-space: nowrap;
+	margin: 10px 10px 10px 10px;
+	border: 1px solid black;
+    border-radius: 5px;
+}
+.div_menu{
+    display: flex;
+    
+}
+
+/* Estilos independientes de los botones de navegación */
+.boton{
+	background-color: red;
+    color: white;
+}
+
+.boton:hover{
+	background-color:rgb(246, 152, 152);
+    color: rgb(159, 157, 157);
+}
+
+.botonin {
+	background-color: red;
+    color: white;
+}
+
+.activo:hover{
+	background-color:rgb(73, 71, 71);
+    color: rgb(159, 157, 157);
+}
+
+
+/* **************** ESTILOS DE LA PARTE PRINCIPAL DE LA PAGINA ******************** */
+/* **************** ESTILOS DE LA PARTE PRINCIPAL DE LA PAGINA ******************** */
+/* **************** ESTILOS DE LA PARTE PRINCIPAL DE LA PAGINA ******************** */
+
+main{
+    grid-area: my-main;
+    border: 1px solid black;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.nuestraHist{
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+    padding: 20px;
+    font-size: 50px ;
+    color: red;
+  }
+
+#texto1-aside{
+    display: flex;
+}
+
+#texto1{
+    padding: 20px;
+    text-align: justify;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#imagen-aside{
+   padding: 20px;
+   
+}
+
+#div-datos{
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+    padding: 20px;
+    font-size: 30px ;
+    color: red;
+}
+
+#texto2{
+    padding: 20px;
+    text-align: justify;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;  
+}
+
+#imagen-long{
+    margin-left: 65px;
+    padding: 50px;
+}
+
+/* **************** ESTILOS PIE DE PAGINA ******************** */
+/* **************** ESTILOS PIE DE PAGINA ******************** */
+/* **************** ESTILOS PIE DE PAGINA ******************** */
+
+footer{
+    grid-area: my-footer;
+    border: 1px solid black;
+    height: 50%;
+    text-align: center;   
+}
+
+#pie-texto{
+    align-items: center;
+}
+
+#facebook-logo{
+    width: 200px;
+    height: auto;
+}
+
+#facebook-logo:hover{
+    border:2px dashed blue;
+}
+
+#instagram-logo{
+    width: 200px;
+    height: auto;
+}
+
+#instagram-logo:hover{
+    border:2px dashed rgb(224, 87, 210);
+}
+
+#aviso-legal{
+    color: red;
+    display: inline-block;
+    position: relative;
+    margin-right: 38px;
+}
+
+#aviso-legal:hover{
+    color:black;
+    border:2px dashed red;
+}
+
+#aviso-legal::after,#aviso-legal::before{
+    content:'';
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    background-color: red;
+}
+
+#aviso-legal::before{
+    left: -20px;
+}
+
+#aviso-legal::after{
+    right: -20px;
+}
+
+#ayuda{
+    color: red;
+    display: inline-block;
+    position: relative;
+}
+
+#ayuda:hover{
+    color:black;
+    border:2px dashed red;
+}
+
+#ayuda::after{
+    content:'';
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    background-color: red;
+}
+
+#ayuda::after{
+    right: -20px;
+}
+
+/* **************** ESTILOS DE NOTICIAS ******************** */
+/* **************** ESTILOS DE NOTICIAS ******************** */
+/* **************** ESTILOS DE NOTICIAS ******************** */
+#imagen-aside{
+    width: 300px;
+    height: 300px;
+
+}
+#imagen-long-noticias{
+    width:1000px;
+    height: auto;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    
+}
+#imagen-aside-mapa{
+    width: 300px;
+    height: 300px;
+}
+
+
+/* **************** ESTILOS DE PRESUPUESTOS ******************** */
+/* **************** ESTILOS DE PRESUPUESTOS ******************** */
+/* **************** ESTILOS DE PRESUPUESTOS ******************** */
+
+body{
+    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+   
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 10px;
+}
+h3{
+    margin: 0px;
+    margin-bottom: 40px;
+    text-align: start;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
+
+.caja{
+    display: flex;
+    margin: 5px ;
+}
+.caja label{
+    flex-basis: 80px;
+    margin-right: 40px;
+  
+}
+
+#checkbox{
+    color: black;
+}
+
+.label-form{
+    width: 100px;
+    }
+
+.caja input{
+    flex: 1;
+    padding:5px;
+    background-color: rgb(203, 194, 194);
+    max-height: 20px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.caja input:focus{
+    outline: none;
+    border-bottom: 3px solid black;
+}
+
+
+button{
+    background-color:red;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 6px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all ease 500ms;
+    width: 35%;
+    align-self: center;
+}
+
+button:hover {
+    background-color: rgb(215, 145, 145);
+    color:black;
+}
+#boton-enviar{
+    float: left;
+    margin-right: 20px;
+    margin-top: 40px;
+}
+
+#boton-borrar{
+    float: left;
+    margin-top: 40px;
+}
+
+#text-area{
+    background-color:  rgb(203, 194, 194);
+    color: rgb(28, 27, 27);
+}
+
+/* **************** ESTILOS DE PRODUCTOS ******************** */
+/* **************** ESTILOS DE PRODUCTOS ******************** */
+/* **************** ESTILOS DE PRODUCTOS ******************** */
+
+.imagen-galeria{
+    padding: 20px;
+    width: 300px;
+    height: 200px;
+    
+}
+
+.imagenes-galeria{
+    display: flex;
+    justify-content:center ;
+}
+
+.titulos-galeria{
+    text-align: center;
+    color: red;   
+}
+
+/* **************** ESTILOS DE CONTACTO ******************** */
+/* **************** ESTILOS DE CONTACTO ******************** */
+/* **************** ESTILOS DE CONTACTO ******************** */
+
+#imagen-aside-mapa{
+    padding: 20px;
+    margin-left: 20px;
+    border: 2px solid red;   
+}
+
+#texto-pincha-en-imagen{
+    font-family: "Dancing Script", cursive;
+    font-style: normal;
+    color: red;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+#texto-google-maps{
+    color: blue;
+}
+
+/* **************** FIN DEFINICIÓN DE ESTILOS ******************** */
+/* **************** FIN DEFINICIÓN DE ESTILOS ******************** */
+/* **************** FIN DEFINICIÓN DE ESTILOS ******************** */
